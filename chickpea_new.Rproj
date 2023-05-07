@@ -1,0 +1,46 @@
+Version: 1.0
+RestoreWorkspace: Yes
+SaveWorkspace: Yes
+AlwaysSaveHistory: Yes
+EnableCodeIndexing: Yes
+UseSpacesForTab: Yes
+NumSpacesForTab: 2
+Encoding: UTF-8
+RnwWeave: Sweave
+LaTeX: pdfLaTeX
+library(LPmerge)
+library(nloptr)
+library(cowplot)
+library(Formula)
+library(ggplot2)
+library(hydroGOF)
+library(LPmerge)
+library(bqtl)
+library(onemap)
+savehistory("C:/Users/ishit/OneDrive/Desktop/chickpea_consensus_map.Rhistory")
+save.image("C:/Users/ishit/OneDrive/Documents/Chickpea/chickpea_new.RData")
+load("~/Chickpea/chickpea_new.RData")
+library(LPmerge)
+library(ggplot2)
+all_map<-read.csv("C:\\Users\\ishit\\OneDrive\\Documents\\Chickpea\\Molecular Maps and QTL data - Sheet1")
+library(xlsx)
+library(writexl)
+library(BisRNA)
+library(bqtl)
+library(cellranger)
+library(data.table)
+library(dplyr)
+library(ggpubr)
+library(hydroGOF)
+library(hydroTSM)
+library(jpeg)
+library(openxlsx)
+library(pinfsc50)
+library(png)
+library(plyr)
+savehistory("C:/Users/ishit/OneDrive/Documents/Chickpea/chickpea_new.Rproj")
+all_map<-read.csv("C:\\Users\\ishit\\OneDrive\\Documents\\Chickpea\\Molecular Maps and QTL data - Sheet1")
+winter_loci_lg5<-winter_loci[165:206]
+winter_loci_lg8<-winter_loci[274:287]
+winter_lg5<-data.frame(marker=winter_name_lg5,position=winter_loci_lg5)
+savehistory("C:/Users/ishit/OneDrive/Documents/Chickpea/chickpea_new.Rproj")
